@@ -33,6 +33,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+
 <h3><a id="what-does-it-do" class="anchor" href="#what-does-it-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>What does it do?</h3>
 <p>
   GraphQuest is a assisted design desktop tool that evolves schematic levels for adventure videogames.
@@ -51,17 +52,29 @@
   The types of content that a room can contain are defined by the designer, and are meant to provide a level of challenge and reward to the level.
   The relative proportions of content can be used as a search parameter for the algorithm.
 </p>
+
 <h3><a id="how-does-it-work" class="anchor" href="#how-does-it-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>How does it work?</h3>
 <p>
-
+  The tool uses a evolutionary algorithm to optimize levels based on a number of fitness criteria.
+  The levels themselves are defined as a group of graphs that define the structures on different abstraction levels.
+  These graphs are produced by a grammar system, that can itself be adapted according to the designer parameters.
 </p>
+<p>
+  The gross structure of the level is defined by a graph that represents the connections between the different zones, and the order of traversal.
+  The inner structure of each zone is defined by another graph, that describes the content of each room and its connections.
+</p>
+<p>
+  The evolution is directed by a fixed set of fitness functions that determine what constitutes a "pretty good" level.
+  These functions can be expanded by user input, directing the search towards the desired outcome.
+</p>
+
 <h3><a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshots</h3>
 <p>
 
 </p>
+
   </section>
     </div>
-
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
@@ -71,8 +84,5 @@
         -->
       </footer>
     </div>
-
-    
-
   </body>
 </html>
